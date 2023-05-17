@@ -1,6 +1,6 @@
 import Cabecalho from "../partials/cabecalho";
-import Calendario from "../partials/calendario"
-import ProgressBar from "../partials/ProgressBar"
+import Calendario from "../components/calendario"
+import ProgressBar from "../components/ProgressBar"
 
 function Dashboard() {
     return (
