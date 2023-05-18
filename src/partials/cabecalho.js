@@ -1,12 +1,12 @@
 import Logo from '../imagens/logo.png'
 
-function cabecalho() {
-    return (
-      <div>
-        <img src={Logo} alt="Logo"></img>
-        <h1>internet meter</h1>
-      </div>
-    );
-  }
-  
-  export default cabecalho;
+function Cabecalho() {
+  return (
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <img src={Logo} alt="Logo" style={{ marginRight: "10px" }} />
+      <h1>internet meter</h1>
+    </div>
+  );
+}
+
+export default Cabecalho;
