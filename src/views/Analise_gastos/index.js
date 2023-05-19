@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Cabecalho from '../../partials/cabecalho';
+import Footer from '../../partials/Footer';
+import { Stack } from '@mui/material';
 
 const ProgressFilter = ({ itemName, progress }) => {
   return (
@@ -85,21 +88,21 @@ const ProgressItemFilter = () => {
 
   return (
     <>
+      <Cabecalho/>
       <h1>Análise por item com filtro</h1>
-      <div
-        style={{
-          backgroundColor: 'black',
-          width: '60%',
-          height: '170px',
-          borderRadius: '8px',
-          padding: '10px',
-          paddingTop: '30px',
-          marginBottom: '20px',
-        }}
-      >
-
-        
-        
+      <Stack
+          direction={{ xs: 'column', sm: 'column' }}
+          spacing={{ xs: 0, sm: 0, md: 0 }}
+          justifyContent="center"
+          alignItems="center"
+          backgroundColor="black"
+          width= '100%'
+          height= '200px'
+          borderRadius= '8px'
+          padding= '10px'
+          paddingTop= '30px'
+          marginBottom= '20px'
+        >
         <div>
           {items.map((item, index) => (
             <div key={index}>
@@ -107,7 +110,7 @@ const ProgressItemFilter = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Stack>
       <div 
       style={{
         paddingBottom: '10px',
@@ -124,14 +127,16 @@ const ProgressItemFilter = () => {
             <option value="lower">Menor que 50%</option>
           </select>
         </div>
-      <div
-        style={{
-          backgroundColor: 'black',
-          width: '60%',
-          height: '220px',
-          borderRadius: '8px',
-          padding: '10px',
-        }}
+      <Stack
+          direction={{ xs: 'column', sm: 'column' }}
+          spacing={{ xs: 0, sm: 0, md: 0 }}
+          justifyContent="center"
+          alignItems="center"
+          backgroundColor= 'black'
+          width='100%'
+          height= '220px'
+          borderRadius= '8px'
+          padding= '10px'
       >
 
         
@@ -146,10 +151,11 @@ const ProgressItemFilter = () => {
         ) : (
           <p>Nenhum item corresponde ao filtro.</p>
         )}
-      </div>
+      </Stack>
 
-      
+      <Footer/>
     </>
+    
   );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Stack } from '@mui/material';
 
 const Progress = ({ itemName, progress }) => {
   return (
@@ -65,19 +66,26 @@ const ProgressItem = () => {
       <div
       style={{
         backgroundColor: "black",
-        width: "60%",
-        height: "170px",
+        width: "100%",
+        height: "220px",
         borderRadius: "8px",
         padding: "10px",
-        paddingTop: "30px"
-      }}
-    >
-        
-        <Progress itemName="Item 1" progress={80} />
-        <Progress itemName="Item 2" progress={50} />
-        <Progress itemName="Item 3" progress={30} />
-        <Progress itemName="Item 4" progress={65} />
-        <Progress itemName="Item 5" progress={90} />
+        paddingTop: "30px",
+      }}>
+        <Stack
+          direction={{ xs: 'column', sm: 'column' }}
+          spacing={{ xs: 0, sm: 0, md: 0 }}
+          justifyContent="center"
+          alignItems="center"
+
+        >
+          <Progress itemName="Item 1" progress={80} />
+          <Progress itemName="Item 2" progress={50} />
+          <Progress itemName="Item 3" progress={30} />
+          <Progress itemName="Item 4" progress={65} />
+          <Progress itemName="Item 5" progress={90} />
+      </Stack>
+
       </div>
     </>
   );

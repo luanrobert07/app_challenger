@@ -4,7 +4,8 @@ import {
     BrowserRouter
   } from "react-router-dom";
   
-  
+  import Analisegasto from './views/Analise_gastos';
+  import GastoMensal from './views/Gasto_mensal';
   import Dashboard from './views/Dashboard';
   import PaginaInicial from './views/PaginaInicial';
   import Login from './views/Login';
@@ -13,6 +14,8 @@ function RoutesApp() {
     return (
     <BrowserRouter>
         <Routes>
+            <Route path="/analisegasto" element={ <Analisegasto/> } />
+            <Route path="/gastomensal" element={ <GastoMensal/> } />
             <Route path="/dashboard" element={ <Dashboard/> } />
             <Route path="/login" element={ <Login/> } />
             <Route path="/" element={ <PaginaInicial/> } />
