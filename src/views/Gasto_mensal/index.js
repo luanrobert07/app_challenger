@@ -10,14 +10,14 @@ import Footer from "../../partials/Footer";
 
 const progress = 50; // Defina o valor do progresso aqui
 
-export default function App() {
+export default function GastoMensal() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   
 
   return (
     
-    <div className="App">
+    <div className="gasto_mensal_container">
       <Cabecalho/>
       <Stack 
           direction={{ xs: 'column', sm: 'row' }}

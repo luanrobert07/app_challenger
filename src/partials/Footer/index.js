@@ -26,7 +26,7 @@ function Footer() {
   return (
     <div>
       <div class="nav">
-        <div>
+        <div class="footer_container">
           <footer id="footer">
           <Stack 
             spacing={{ xs: 8, sm: 8, md: 14 }} 
