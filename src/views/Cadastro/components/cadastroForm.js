@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './loginForm.css';
+import './cadastroForm.css';
 import { useNavigate } from "react-router-dom";
-import { validateLogin } from '../../../data/login';
+import { createUser } from '../../../data/login';
 
-export function LoginForm() {
+export function CadastroForm() {
     const [username, setUserame] = useState("");
     const [password, setPassword] = useState("");
 
@@ -12,17 +12,15 @@ export function LoginForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        if (!validateLogin(username, password)) {
-            alert(`Wrong username or password`);
-        } else {
-            navigate('/dashboard');
-        }
+        createUser(username,password)
+        alert("Usuário cadastrado")
+        navigate("/login")
     }
 
     return (
         <form class="form_style">
             <div>
-                <h1 class="form_title">Login</h1>
+                <h1 class="form_title">Cadastrar</h1>
             </div>
             <div class="form_container">
                 <div class="form_input_container">
@@ -48,7 +46,7 @@ export function LoginForm() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <button type="submit" class="form_submit_button" onClick={handleSubmit}>Login</button>
+                <button type="submit" class="form_submit_button" onClick={handleSubmit}>Cadastrar</button>
             </div>
         </form>
     )

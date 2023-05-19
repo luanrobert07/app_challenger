@@ -36,7 +36,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmit} class="fas fa-arrow-left"></i>
+              <i onClick={handleSubmit} id="dashboard_icon" class="fas fa-arrow-left"></i>
             </div>
 
             <div class="icon">
@@ -50,7 +50,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i class="far fa-calendar-alt"></i>
+              <i onClick={handleSubmit} id="calendar_icon"class="far fa-calendar-alt"></i>
             </div>
 
             <div class="icon">
@@ -64,7 +64,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i class="far fa-chart-bar"></i>
+              <i onClick={handleSubmit} id="analyse_icon"class="far fa-chart-bar"></i>
             </div>
 
             <div class="icon">

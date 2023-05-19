@@ -1,4 +1,4 @@
-const validLogins = [
+let validLogins = [
     {
         username: 'admin',
         password: 'admin',
@@ -9,6 +9,13 @@ const validLogins = [
     }
 ];
 
+export function createUser(username,password){
+    const user = {
+        username:username,
+        password:password
+    }
+    validLogins.push(user)
+}
 
 export function validateLogin(username, password){
     for(let i = 0; i < validLogins.length; i++){

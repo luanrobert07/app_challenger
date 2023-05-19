@@ -16,7 +16,7 @@ function PaginaInicial() {
     }
 
     return (
-        <div class = "container">
+        <div class = "container_pag_inicial">
             <div class  = "upper">
                 <div class = "logo">
                     <img src={Logo} alt="Logo" class='logo_image' style={{ marginRight: "10px" }} />
