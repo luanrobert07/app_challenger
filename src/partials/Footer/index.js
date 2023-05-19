@@ -8,9 +8,19 @@ function Footer() {
   
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmitDashboard = (event) => {
     event.preventDefault();
     navigate('/dashboard');
+  }
+
+  const handleSubmitAnalyse = (event) => {
+    event.preventDefault();
+    navigate('/analisegasto');
+  }
+
+  const handleSubmitCalendar = (event) => {
+    event.preventDefault();
+    navigate('/gastomensal');
   }
 
   return (
@@ -36,7 +46,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmit} id="dashboard_icon" class="fas fa-arrow-left"></i>
+              <i onClick={handleSubmitDashboard} id="dashboard_icon" class="fas fa-arrow-left"></i>
             </div>
 
             <div class="icon">
@@ -50,7 +60,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmit} id="calendar_icon"class="far fa-calendar-alt"></i>
+              <i onClick={handleSubmitAnalyse} id="calendar_icon"class="far fa-calendar-alt"></i>
             </div>
 
             <div class="icon">
@@ -64,7 +74,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmit} id="analyse_icon"class="far fa-chart-bar"></i>
+              <i onClick={handleSubmitCalendar} id="analyse_icon"class="far fa-chart-bar"></i>
             </div>
 
             <div class="icon">
