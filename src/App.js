@@ -1,10 +1,13 @@
-import './App.css';
-import Dashboard from './views/Dashboard';
+//import './App.css';
+
+import RoutesApp from "./routes";
+
+
 
 function App() {
   return (
     <>
-      <Dashboard/>
+      <RoutesApp />
     </>
   );
 }

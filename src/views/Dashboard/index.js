@@ -1,6 +1,7 @@
-import Cabecalho from "../partials/cabecalho";import ProgressBar from "../components/ProgressBar";
-import ProgressItem from "../components/ProgressItem";
-import ProgressItemFilter from "../components/ProgressItemFilter";
+import Cabecalho from "../../partials/cabecalho";
+import ProgressBar from "../../components/ProgressBar";
+import ProgressItem from "../../components/ProgressItem";
+import ProgressItemFilter from "../../components/ProgressItemFilter";
 
 function Dashboard() {
   const progress = 50; // Defina o valor do progresso aqui
