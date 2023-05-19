@@ -89,19 +89,21 @@ const ProgressItemFilter = () => {
   return (
     <>
       <Cabecalho/>
-      <h1>Análise por item com filtro</h1>
+      <h1 style={{textAlign: "center" }}>Análise por item com filtro</h1>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Stack
           direction={{ xs: 'column', sm: 'column' }}
           spacing={{ xs: 0, sm: 0, md: 0 }}
           justifyContent="center"
           alignItems="center"
           backgroundColor="black"
-          width= '100%'
-          height= '200px'
-          borderRadius= '8px'
-          padding= '10px'
-          paddingTop= '30px'
-          marginBottom= '20px'
+          width="30%"
+          height="220px"
+          borderRadius="8px"
+          padding="10px"
+          paddingTop="30px"
+          margin-left="auto"
+          margin-right="auto"
         >
         <div>
           {items.map((item, index) => (
@@ -111,9 +113,12 @@ const ProgressItemFilter = () => {
           ))}
         </div>
       </Stack>
+      </div>
       <div 
       style={{
         paddingBottom: '10px',
+        display: 'flex', justifyContent: 'center', alignItems: 'center'
+
       }}
       >
           <label htmlFor="filter">Ítem:     </label>
@@ -127,17 +132,21 @@ const ProgressItemFilter = () => {
             <option value="lower">Menor que 50%</option>
           </select>
         </div>
-      <Stack
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Stack
           direction={{ xs: 'column', sm: 'column' }}
           spacing={{ xs: 0, sm: 0, md: 0 }}
           justifyContent="center"
           alignItems="center"
-          backgroundColor= 'black'
-          width='100%'
-          height= '220px'
-          borderRadius= '8px'
-          padding= '10px'
-      >
+          backgroundColor="black"
+          width="30%"
+          height="220px"
+          borderRadius="8px"
+          padding="10px"
+          paddingTop="30px"
+          margin-left="auto"
+          margin-right="auto"
+        >
 
         
       
@@ -152,6 +161,7 @@ const ProgressItemFilter = () => {
           <p>Nenhum item corresponde ao filtro.</p>
         )}
       </Stack>
+      </div>
 
       <Footer/>
     </>

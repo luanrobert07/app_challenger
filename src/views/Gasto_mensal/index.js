@@ -75,7 +75,7 @@ export default function App() {
       <div
         style={{
           backgroundColor: "black",
-          width: "100%",
+          width: "40%",
           height: "170px",
           borderRadius: "8px",
           padding: "10px"

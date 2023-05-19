@@ -62,31 +62,30 @@ const Progress = ({ itemName, progress }) => {
 const ProgressItem = () => {
   return (
     <>
-      <h1>Análise por ítem</h1>
-      <div
-      style={{
-        backgroundColor: "black",
-        width: "100%",
-        height: "220px",
-        borderRadius: "8px",
-        padding: "10px",
-        paddingTop: "30px",
-      }}>
+      <h1 style={{textAlign: "center" }} >Análise por ítem</h1>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Stack
           direction={{ xs: 'column', sm: 'column' }}
           spacing={{ xs: 0, sm: 0, md: 0 }}
           justifyContent="center"
           alignItems="center"
-
+          backgroundColor="black"
+          width="30%"
+          height="220px"
+          borderRadius="8px"
+          padding="10px"
+          paddingTop="30px"
+          margin-left="auto"
+          margin-right="auto"
         >
           <Progress itemName="Item 1" progress={80} />
           <Progress itemName="Item 2" progress={50} />
           <Progress itemName="Item 3" progress={30} />
           <Progress itemName="Item 4" progress={65} />
           <Progress itemName="Item 5" progress={90} />
-      </Stack>
-
+        </Stack>
       </div>
+
     </>
   );
 };
