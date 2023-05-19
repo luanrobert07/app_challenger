@@ -76,14 +76,15 @@ export default function GastoMensal() {
       </div>
 
       <div class= "div_stacks">
-        <h3 style={{ color: "gray", fontSize: "40px", textAlign: "center" }}>Análise de gastos</h3>
-        <h2 style={{ color: "gray", fontSize: "30px", textAlign: "center" }}>
+        <h3 style={{ color: "gray", fontSize: "20px", textAlign: "center" }}>Análise de gastos</h3>
+        <h2 style={{ color: "gray", fontSize: "20px", textAlign: "center" }}>
           Day: {startDate && formatDateString(startDate)} - {endDate && formatDateString(endDate)}
         </h2>
         <Stack 
           direction={{ xs: 'row', sm: 'row' }}
           spacing={{ xs: 2, sm: 2, md: 4 }}
           justifyContent="center"
+          height="40px"
         >
           <ProgressBar progress={progress} />
         </Stack>

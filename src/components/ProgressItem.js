@@ -62,7 +62,7 @@ const Progress = ({ itemName, progress }) => {
 const ProgressItem = () => {
   return (
     <>
-      <h1 style={{textAlign: "center" }} >Análise por ítem</h1>
+      <h1 style={{textAlign: "center", paddingTop: "30px" }} >Análise por ítem</h1>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Stack
           direction={{ xs: 'column', sm: 'column' }}
@@ -77,6 +77,7 @@ const ProgressItem = () => {
           paddingTop="30px"
           margin-left="auto"
           margin-right="auto"
+          marginBottom= "100px"
         >
           <Progress itemName="Item 1" progress={80} />
           <Progress itemName="Item 2" progress={50} />
