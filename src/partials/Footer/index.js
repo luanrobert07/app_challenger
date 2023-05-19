@@ -18,6 +18,11 @@ function Footer() {
     navigate('/analisegasto');
   }
 
+  const handleSubmitRede = (event) => {
+    event.preventDefault();
+    navigate('/analiserede');
+  }
+
   const handleSubmitCalendar = (event) => {
     event.preventDefault();
     navigate('/gastomensal');
@@ -77,7 +82,7 @@ function Footer() {
               <i id="analyse_icon"class="far fa-chart-bar"></i>
             </div>
 
-            <div class="icon">
+            <div class="icon" onClick={handleSubmitRede}>
               <svg height="80" width="80">
                 <circle
                   cx="20"

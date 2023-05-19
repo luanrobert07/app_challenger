@@ -102,7 +102,7 @@
         padding: 3rem;
     }
     .form_title{
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 1rem 0;
     }
 
@@ -130,7 +130,7 @@
         padding: 3rem;
     }
     .form_title{
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 1rem 0;
     }
 
@@ -146,6 +146,6 @@
         width: 30%;
     }
     .form_label{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }

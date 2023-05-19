@@ -103,7 +103,7 @@ const AnaliseGasto = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <h2 style={{ color: 'white', }}>Itens Filtrados</h2>
+          <h2 class="stack_info_title">Itens Filtrados</h2>
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
               <div key={index}>

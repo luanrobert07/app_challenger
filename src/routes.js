@@ -8,6 +8,7 @@ import Analisegasto from './views/Analise_gastos';
 import GastoMensal from './views/Gasto_mensal';
 import Dashboard from './views/Dashboard';
 import PaginaInicial from './views/PaginaInicial';
+import Analiserede from './views/Analise_rede';
 import Login from './views/Login';
 import Cadastro from './views/Cadastro'
 
@@ -16,6 +17,7 @@ function RoutesApp() {
     <BrowserRouter>
       <Routes>
         <Route path="/analisegasto" element={<Analisegasto />} />
+        <Route path="/analiserede" element={<Analiserede />} />
         <Route path="/gastomensal" element={<GastoMensal />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
