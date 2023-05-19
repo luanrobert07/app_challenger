@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+.progress_filter_container{
+    margin-bottom:10px;
+}
+
+.progress_filter_box{
+    display: flex;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.progress_filter_item_name{
+    margin-right: 10px;
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.progress_filter_progress_bar{
+    background-color: gray;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.progress_filter_progress_bar_fill{
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress_filter_progress_bar_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.analise_container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.div_stacks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    height: 40%;
+    border-radius: 1rem;
+}
+
+.plano_stats{
+    justify-content: space-evenly;
+}
+
+.stack_title,.stack_info{
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.title_page{
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .div_stacks{
+        width: 90%;
+    }
+
+    .progress_filter_item_name{
+        font-size: 1.2rem;
+    }
+
+    .progress_filter_progress_bar_text{
+        font-size: 1rem;
+    }
+
+    .stack_title{
+        font-size: 1.5rem;
+    }
+
+    .stack_info{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .div_stacks{
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .div_stacks{
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1918px) {
+    .div_stacks {
+        width: 40%;
+    }
+
+    .stack_title{
+        font-size: 1.5rem;
+    }
+
+    .stack_info{
+        font-size: 1.2rem;
+    }
+
+    .title_page{
+        font-size: 1.4rem;
+    }
+
+    .progress_filter_item_name{
+        font-size: 1rem;
+    }
+
+    .progress_filter_progress_bar_text{
+        font-size: 0.8rem;
+    }
+
+    .stack_info_title{
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,53 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#footer {
+  width: 100%;
+  height: 73.26px;
+  background: #747272;
+  bottom: 0;
+}
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.icon i {
+  color: brack;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+svg circle {
+  stroke-dasharray: 9;
+  transition: all 1.8s;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.icon:hover svg circle {
+  stroke-dasharray: 320;
+}
+

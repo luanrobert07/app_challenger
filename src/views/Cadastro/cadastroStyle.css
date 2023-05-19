@@ -1,0 +1,140 @@
+/*Container flex*/
+
+.container_pag_cadastro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+	background-color: #fff8f8;
+	line-height: normal;
+	box-sizing: border-box;
+}
+
+/*Division containers*/
+
+/*Upper*/
+.upper_cadastro {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: auto;
+	width: 100%;
+}
+
+.cabecalho_cadastro {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.image_container_pag_cadastro {
+	margin-top: 0.5%;
+	margin-right: 0.5%;
+}
+
+.back_container_pag_cadastro {
+	background-color: #8c8989;
+	width: 20vh;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	margin-top: 5%;
+	margin-left: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.text_back_pag_cadastro {
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin:0;
+}
+
+.link_pag_cadastro{
+	text-decoration: none;
+	color: #000;
+}
+
+.link_pag_cadastro:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.logo_image_pag_cadastro {
+	width: 20vh;
+	height: auto;
+	aspect-ratio: 1/1;
+}
+
+/*Lower*/
+
+.lower_cadastro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.container_cadastro {
+	border-radius: 20%;
+	background-color: #2b2a2a;
+	width:35%;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+	.lower_cadastro{
+		height: 100%;
+		width: 100%;
+	}
+	.container_cadastro{
+		width: 90%;
+		height: auto;
+		aspect-ratio: unset;
+	}
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+	.lower_cadastro{
+		height: 100%;
+		width: 100%;
+	}
+	.container_cadastro{
+		width: 80%;
+		height: auto;
+		aspect-ratio: unset;
+	}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	.lower_cadastro{
+		height: 100%;
+		width: 100%;
+	}
+	.container_cadastro{
+		width: 80%;
+		height: auto;
+		aspect-ratio: unset;
+	}
+
+}
