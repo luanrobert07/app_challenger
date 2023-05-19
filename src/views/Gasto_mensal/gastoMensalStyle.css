@@ -63,7 +63,10 @@
 	align-items: space-between;
 	justify-content: space-between;
 }
-
+.teste{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
 .div_stacks {
 	display: flex;
 	flex-direction: column;
@@ -71,8 +74,6 @@
 	align-items: center;
 	background-color: black;
 	width: 30%;
-	margin: 0 auto;
-	margin-bottom: 1%;
 	height: 60%;
 	border-radius: 1rem;
 }

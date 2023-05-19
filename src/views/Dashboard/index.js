@@ -1,5 +1,3 @@
-import { StrictMode } from "react";
-
 import Cabecalho from "../../partials/cabecalho/index";
 import ProgressBar from "../../components/ProgressBar";
 import ProgressItem from "../../components/ProgressItem";
@@ -37,10 +35,9 @@ function Dashboard() {
           <div>
             <ProgressItem/>
           </div>
-        
-        <StrictMode>
-          <Footer/>
-        </StrictMode>
+          <div style={{position: "fixed", bottom: "0", left: "0", width: "100%"}} >
+            <Footer/>
+          </div>
         
       </div>
     );

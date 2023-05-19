@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Cabecalho from '../../partials/cabecalho';
 import Footer from '../../partials/Footer';
 import { Stack } from '@mui/material';

@@ -74,7 +74,7 @@ export default function GastoMensal() {
           />
         </Stack>
       </div>
-
+    <div class="teste">
       <div class= "div_stacks">
         <h3 style={{ color: "gray", fontSize: "20px", textAlign: "center" }}>Análise de gastos</h3>
         <h2 style={{ color: "gray", fontSize: "20px", textAlign: "center" }}>
@@ -84,13 +84,17 @@ export default function GastoMensal() {
           direction={{ xs: 'row', sm: 'row' }}
           spacing={{ xs: 2, sm: 2, md: 4 }}
           justifyContent="center"
-          height="40px"
+          height="50px"
         >
           <ProgressBar progress={progress} />
         </Stack>
 
       </div>
-      <Footer/>
+    </div>
+      <div style={{position: "fixed", bottom: "0", left: "0", width: "100%"}} >
+        <Footer/>
+      </div>
+     
     </div>
   );
 }
