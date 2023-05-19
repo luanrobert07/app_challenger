@@ -1,0 +1,90 @@
+/*Container flex*/
+
+.container_pag_login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+	background-color: #fff8f8;
+}
+
+/*Division containers*/
+
+/*Upper*/
+.upper_login {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 30%;
+	width: 100%;
+}
+
+.cabecalho_login {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.image_container_pag_login {
+	margin-top: 0.5%;
+	margin-right: 0.5%;
+}
+
+.back_container_pag_login {
+	background-color: #8c8989;
+	width: 20vh;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	margin-top: 5%;
+	margin-left: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.text_back_pag_login {
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link_pag_login{
+	text-decoration: none;
+	color: #000;
+}
+
+.logo_image_pag_login {
+	width: 20vh;
+	height: auto;
+	aspect-ratio: 1/1;
+}
+
+/*Lower*/
+
+.lower_login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	width: 100%;
+}
+
+.container_login {
+	border-radius: 20%;
+	background-color: #2b2a2a;
+	width:40%;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
