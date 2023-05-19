@@ -35,7 +35,7 @@ function Footer() {
             justifyContent="center"
             paddingTop={"15px"}
           >
-            <div class="icon">
+            <div class="icon" onClick={handleSubmitDashboard}>
               <svg height="80" width="80">
                 <circle
                   cx="20"
@@ -46,10 +46,10 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmitDashboard} id="dashboard_icon" class="fas fa-arrow-left"></i>
+              <i id="dashboard_icon" class="fas fa-arrow-left"></i>
             </div>
 
-            <div class="icon">
+            <div class="icon" onClick={handleSubmitAnalyse} >
               <svg height="80" width="80">
                 <circle
                   cx="20"
@@ -60,10 +60,10 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmitAnalyse} id="calendar_icon"class="far fa-calendar-alt"></i>
+              <i id="calendar_icon"class="far fa-calendar-alt"></i>
             </div>
 
-            <div class="icon">
+            <div class="icon" onClick={handleSubmitCalendar} >
               <svg height="80" width="80">
                 <circle
                   cx="20"
@@ -74,7 +74,7 @@ function Footer() {
                   fill="none"
                 />
               </svg>
-              <i onClick={handleSubmitCalendar} id="analyse_icon"class="far fa-chart-bar"></i>
+              <i id="analyse_icon"class="far fa-chart-bar"></i>
             </div>
 
             <div class="icon">
