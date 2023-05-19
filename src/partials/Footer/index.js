@@ -49,7 +49,7 @@ function Footer() {
               <i id="dashboard_icon" class="fas fa-arrow-left"></i>
             </div>
 
-            <div class="icon" onClick={handleSubmitAnalyse} >
+            <div class="icon" onClick={handleSubmitCalendar} >
               <svg height="80" width="80">
                 <circle
                   cx="20"
@@ -63,7 +63,7 @@ function Footer() {
               <i id="calendar_icon"class="far fa-calendar-alt"></i>
             </div>
 
-            <div class="icon" onClick={handleSubmitCalendar} >
+            <div class="icon" onClick={handleSubmitAnalyse} >
               <svg height="80" width="80">
                 <circle
                   cx="20"

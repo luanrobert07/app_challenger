@@ -1,11 +1,14 @@
 import React from "react";
 
 const ProgressBar = ({ progress }) => {
+
+  const color = progress > 75 ? 'red' : 'green';
+
   return (
     <div
       style={{
         backgroundColor: "gray",
-        width: "50%",
+        width: "80%",
         height: "30px",
         borderRadius: "5px",
         position: "relative"
@@ -13,7 +16,7 @@ const ProgressBar = ({ progress }) => {
     >
       <div
         style={{
-          backgroundColor: "green",
+          backgroundColor: `${color}`,
           width: `${progress}%`,
           height: "100%",
           borderRadius: "5px"
@@ -26,7 +29,7 @@ const ProgressBar = ({ progress }) => {
           left: "50%",
           transform: "translate(-50%, -50%)",
           color: "white",
-          fontSize: "14px"
+          fontSize: "2rem"
         }}
       >
         {progress}%

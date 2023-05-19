@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Calendar from "react-date-range-calendar";
-import "./styles.css";
+import "./gastoMensalStyle.css";
 import Stack from '@mui/material/Stack';
 
 
@@ -24,63 +24,58 @@ export default function GastoMensal() {
           spacing={{ xs: 1, sm: 2, md: 4 }}
           justifyContent="center"
         >
-        <h1>Dados mensais</h1>
+        <h1 class="title_page">Dados mensais</h1>
       </Stack>
 
-      <Stack 
-          direction={{ xs: 'column', sm: 'row' }}
-          spacing={{ xs: 1, sm: 2, md: 4 }}
-          justifyContent="center"
-        >
-        <Calendar
-          onSelect={(startDate, endDate, validDateRange) => {
-            setStartDate(startDate);
-            setEndDate(endDate);
-          }}
-          selectedRange={["2023-05-19", "2030-05-19"]}
-          tdCssObj={{
-            padding: "15px 1px 15px 1px"
-          }}
-          onHoverTdCssObj={{
-            backgroundColor: "#050F26",
-            color: "#FFFFFF",
-            borderRadius: "50%",
-            cursor: "pointer"
-          }}
-          inRangedTdCssObj={{
-            background: "rgba(5, 15, 38, 0.08)",
-            fontSize: "14px",
-            color: "#050F26",
-            borderRadius: "0"
-          }}
-          startDateTdCssObj={{
-            backgroundColor: "#050F26",
-            fontSize: "14px",
-            color: "#FFFFFF",
-            borderRadius: "50%"
-          }}
-          endDateTdCssObj={{
-            backgroundColor: "#050F26",
-            fontSize: "14px",
-            color: "#FFFFFF",
-            borderRadius: "50%"
-          }}
-          disabledDatesTdCssObj={{
-            backgroundColor: "#FFFFFF",
-            fontSize: "14px",
-            color: "#CDCFD4"
-          }}
-        />
-      </Stack>
-      <div
-        style={{
-          backgroundColor: "black",
-          width: "40%",
-          height: "170px",
-          borderRadius: "8px",
-          padding: "10px"
-        }}
-      >
+      <div class="div_stacks_calendar">
+        <Stack 
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={{ xs: 1, sm: 2, md: 4 }}
+            justifyContent="center"
+          >
+          <Calendar
+            onSelect={(startDate, endDate, validDateRange) => {
+              setStartDate(startDate);
+              setEndDate(endDate);
+            }}
+            selectedRange={["2023-05-19", "2030-05-19"]}
+            tdCssObj={{
+              padding: "15px 1px 15px 1px"
+            }}
+            onHoverTdCssObj={{
+              backgroundColor: "#050F26",
+              color: "#FFFFFF",
+              borderRadius: "50%",
+              cursor: "pointer"
+            }}
+            inRangedTdCssObj={{
+              background: "rgba(5, 15, 38, 0.08)",
+              fontSize: "14px",
+              color: "#050F26",
+              borderRadius: "0"
+            }}
+            startDateTdCssObj={{
+              backgroundColor: "#050F26",
+              fontSize: "14px",
+              color: "#FFFFFF",
+              borderRadius: "50%"
+            }}
+            endDateTdCssObj={{
+              backgroundColor: "#050F26",
+              fontSize: "14px",
+              color: "#FFFFFF",
+              borderRadius: "50%"
+            }}
+            disabledDatesTdCssObj={{
+              backgroundColor: "#FFFFFF",
+              fontSize: "14px",
+              color: "#CDCFD4"
+            }}
+          />
+        </Stack>
+      </div>
+
+      <div class= "div_stacks">
         <h3 style={{ color: "gray", fontSize: "40px", textAlign: "center" }}>Análise de gastos</h3>
         <h2 style={{ color: "gray", fontSize: "30px", textAlign: "center" }}>
           Day: {startDate && formatDateString(startDate)} - {endDate && formatDateString(endDate)}
