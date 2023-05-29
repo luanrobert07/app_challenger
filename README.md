@@ -1,3 +1,6 @@
+# Objetivo do Aplicativo
+Protótico de uma aplicação que faz a análise de dados em uma rede de internet
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
